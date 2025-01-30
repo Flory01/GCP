@@ -1,0 +1,126 @@
+*{
+			margin: 0px;
+			padding:0px;
+			box-sizing: border-box;
+			font-size: large;
+			font-family: "bell mt";
+			color: black;
+		}
+		body{
+			background-size: cover;
+			height: 100%;
+			padding: 50px 0px 0px 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			overflow-x: hidden;
+		}
+		@media screen and (max-width: 430px){
+			*{
+				font-size: small;
+			}
+		}
+		@media screen and (max-width: 259px){
+			body #box_form form {
+				display: grid;
+			}
+			body #box_form form input{
+				width: 150px;
+			}
+		} 
+		@media all and (min-width: 260px) and (max-width: 491px){
+			body #box_form form {
+				display: grid;
+			}
+			body #box_form form input{
+				width: 150px;
+			}
+		}
+		body #box_form{
+			display: flex;
+			margin-top: 20px;
+			justify-content: center;
+			align-items: center;
+		}
+		body #box_form form input{
+			padding: 0px 0px 0px 10px;
+			height: 25px;
+			border: 2px solid #34495E;
+			border-radius: 10px;
+			color: #34495E;
+			font-weight: bold;
+		}
+		@media all and (min-width: 492px){
+			body #box_form form input{
+				width: 100px;
+			}
+		}
+		body table{
+			border-collapse: collapse;
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+		}
+		body table th{
+			background: #34495E;
+			color: white;
+		}
+		body table thead tr:first-child th{
+			border-bottom: 3px solid white;
+		}
+		body table td,
+		body table th{
+			border: 2px solid #34495E;
+			font-weight: bold;
+			height: 50px;
+		}
+		body table td{
+			color: #34495E;
+		}
+		body table tbody a{
+			text-decoration: none;
+		}
+		body table tbody .fa-download,
+		body table tbody .fa-edit,
+		body table tbody .fa-check,
+		body table tbody .fa-xmark{
+		  color: rgb(14, 209, 69);
+		}
+		body table tbody .fa-trash{
+			color: red;
+		}
+		body #BoxBtnDefilement{
+			height: 30px;
+			margin: 20px 0px 10px 0px;
+		}
+		body #BoxBtnDefilement ul{
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		body #BoxBtnDefilement li{
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			list-style-type: none;
+		}
+		body #BoxBtnDefilement a{
+			border: 2px solid #34495E;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 70px;
+			margin: 0px 10px 0px 0px;
+			border-radius: 10px;
+			color: #34495E;
+		}
+		body #BoxBtnDefilement a:hover{
+			background: #34495E;
+			color: white;
+			font-weight: bold;
+			transition: 1.5s;
+		}

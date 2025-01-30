@@ -1,0 +1,41 @@
+footer{
+	background: rgb(0, 0, 0);
+	width: 105%;
+	height: 152px;
+	margin: 185px 0px -3px -5px;
+	border-top: 2px solid black;
+}
+footer div{
+	padding: 5px 0px 0px 0px;
+	height: 100%;
+	font-weight: bold;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+footer div h1{
+	font-size: x-large;
+	text-align: center;
+}
+footer div p, footer div h1{
+	color: white;
+}
+@media screen and (min-width: 417px){
+	footer #Contact{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 4px;
+	}
+	footer #Contact p:first-child{
+		margin-right: 10px;
+	}
+}
+footer div p span{
+	color: white;
+}
+footer div#Copyright{
+	background: gray;
+	width: 100%;
+	height: 50px;
+}

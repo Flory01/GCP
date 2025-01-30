@@ -1,0 +1,226 @@
+*{
+			margin: 0px;
+			padding:0px;
+			box-sizing: border-box;
+			font-size: large;
+			font-family: "bell mt";
+			color: black;
+		}
+		body{
+			background-size: cover;
+			height: 100%;
+			padding: 60px 0px 0px 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			overflow-x: hidden;
+		}
+		@media screen and (max-width: 430px){
+			*{
+				font-size: small;
+			}
+		}
+		body h3.Titre{
+			border: 2px solid #34495E;
+			background: #34495E;
+			text-transform: uppercase;
+			margin: 0px 0px 10px 0px;
+			width: 100%;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			text-align: center;
+		}
+		body #RechercheProduit{
+			min-width: 200px;
+			min-height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+			margin: 0px 0px 10px 0px;
+		}
+		body input[type=submit],
+		body #RechercheProduit select{
+			outline: none;
+			border-radius: 10px;
+			height: 50px;
+		}
+		body #RechercheProduit select{
+			border: 2px solid #34495E;
+			text-align: center;
+			max-width: 100px;
+			margin: 0px 10px 0px 0px;
+		}
+		body input[type=submit]{
+			border: none;
+			padding: 5px;
+			border: 2px solid #34495E;
+			color: white;
+			font-weight: bold;
+			background: #34495E;
+		}
+		body input[type=submit]:hover{
+			background: lightgreen;
+			border: 2px solid lightgreen;
+			transition: 1.5s;
+		}
+		body #BoxProd{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		@media screen and (min-width: 750px){
+			body #BoxProd{
+				display: flex;
+				flex-direction: row;
+			}
+		}
+		body .BoxProdSelect{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		body #Produit{
+			min-height: 300px;
+			background: #34495E;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+			margin: 0px 0px 10px 0px;
+			text-align: center;
+			box-shadow: 0px 0px 10px black;
+		}
+		@media screen and (max-width: 400px){
+			body #Produit{
+				width: 200px;	
+			}
+			body #Produit img{
+				width: 200px;
+				height: 200px;
+				border-radius: 10px;
+			}
+		}
+		@media screen and (min-width: 401px){
+			body #Produit{
+				width: 300px;
+				margin: 0px 10px 10px 0px;
+			}
+			body #Produit img{
+				width: 300px;
+				height: 200px;
+				border-radius: 10px;
+			}
+		}
+		body #Produit h3{
+			margin: 0px 0px 15px 0px;
+			font-size: x-large;
+		}
+		body #Produit p{
+			margin: 0px 0px 10px 0px;
+			color: white;
+		}
+		body #Produit p.Btn{
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		body #Produit a{
+			border:2px solid white;
+			text-decoration: none;
+			font-weight: bold;
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 150px;
+			height: 100%;
+			background: #34495E;
+			color: white;
+		}
+		body #Produit a:hover{
+			background: lightgreen;
+			border:none;
+			color: #34495E;
+			transition: 1.5s;
+		}
+		body #BoxBtnTel{
+			height: 50px;
+			margin: 0px 0px 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		body #BoxBtnTel p{
+			width: 100px;
+			height: 100%;
+			margin: 0px 0px 0px 2px;
+			display: flex;
+			justify-content: center;
+		}
+		body #BoxBtnTel p a{
+			width: 60px;
+			height: 100%;
+			border: 2px solid #34495E;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+			text-decoration: none;
+			color: #34495E;
+		}
+		body #BoxBtnTel p a:hover{
+			background: #34495E;
+			color: white;
+			transition: 1.5s;
+			border: none;
+		}
+		body a#BtnSup:hover{
+			background: red;
+			border:2px solid red;
+			color: white;
+		}
+		body #BoxBtnDefilement{
+			height: 30px;
+			margin: 0px 0px 10px 0px;
+		}
+		body #BoxBtnDefilement ul{
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		body #BoxBtnDefilement li{
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			list-style-type: none;
+		}
+		body #BoxBtnDefilement a{
+			border: 2px solid #34495E;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 70px;
+			margin: 0px 10px 0px 0px;
+			border-radius: 10px;
+			color: #34495E;
+		}
+		body #BoxBtnDefilement a:hover{
+			background: #34495E;
+			color: white;
+			font-weight: bold;
+			transition: 1.5s;
+		}
+		body #BoxTableau{
+			border: 2px solid black;
+		}

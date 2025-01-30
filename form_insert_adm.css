@@ -1,0 +1,99 @@
+* {
+  font-family : 'poppins', sans-serif;
+  margin : 0; 
+  padding : 0;
+  box-sizing : border-box;
+}
+body {
+  display : flex ;
+  flex-direction: column;
+  justify-content : center ;
+  align-items : center;
+  min-height : 100vh;
+  background : grey;
+}
+body #FormInsertAdm{
+  display: grid;
+  background: skyblue;
+  box-shadow: /*OX*/5px /*OY*/5px /*Epaisseur du brouillard*/5px /*Couleur du brouillard*/rgb(255,255,255);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+  height: 300px;
+}
+@media screen and (max-width: 400px){
+  body #FormInsertAdm{
+    width: 250px;
+  }
+}
+@media screen and (min-width: 401px){
+  body #FormInsertAdm{
+    width: 400px;
+  }
+}
+body #FormInsertAdm label{
+  font-weight: bold;
+}
+body #FormInsertAdm p{
+  border: 1px solid red;
+  background: pink;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  align-items: center;
+  color: red;
+  text-align: center;
+  width: 400px;
+}
+@media screen and (max-width : 400px){
+  body #FormInsertAdm p{
+    max-width: 230px;
+  }
+}
+@media screen and (min-width : 401px){
+  body #FormInsertAdm p{
+    max-width: 280px;
+  }
+}
+body #FormInsertAdm input{
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+body #FormInsertAdm input[type=text],
+body #FormInsertAdm input[type=password]{
+  height: 30px;
+  padding-left: 20px;
+}
+@media screen and (max-width: 400px){
+  body #FormInsertAdm input[type=text],
+  body #FormInsertAdm input[type=password]{
+    max-width: 230px;
+  }
+}
+@media screen and (min-width: 401px){
+  body #FormInsertAdm input[type=text],
+  body #FormInsertAdm input[type=password]{
+    min-width: 280px;
+  }
+}
+body #FormInsertAdm input[type=text]:focus,
+body #FormInsertAdm input[type=password]:focus{
+  border-bottom: 4px solid gray;
+}
+body #FormInsertAdm input[type=submit]{
+  height: 50px;
+  width: 150px;
+}
+body #FormInsertAdm input[type=submit]:hover{
+  height: 50px;
+  transition: 2s;
+  background: rgb(14, 209, 69);
+}
+body #FormInsertAdm #BoxBtnInsertAdm{
+  display: flex;
+  justify-content: center;
+}

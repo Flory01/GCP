@@ -1,0 +1,147 @@
+
+		*{
+			margin: 0px;
+			padding:0px;
+			box-sizing: border-box;
+			font-size: large;
+			font-family: "bell mt";
+			color: black;
+		}
+		body{
+			background-size: cover;
+			height: 100%;
+			padding: 50px 0px 0px 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			overflow-x: hidden;
+		}
+		@media screen and (max-width: 430px){
+			*{
+				font-size: small;
+			}
+			body #box_form form {
+				display: grid;
+			}
+			body #box_form form input{
+				width: 150px;
+			}
+		}
+		body #BoxForm{
+			width: 100%;
+			display: flex;
+			padding	:10px 0px 0px 0px;
+			margin: 30px 0px 65px 0px;
+			justify-content: center;
+		}
+		body #Formulaire_commande{
+			border: 2px solid #34495E;
+			padding: 7px;
+			height: 300px;
+			background: #34495E;
+			border-radius: 10px;
+		}
+		@media screen and (max-width: 400px){
+			body #Formulaire_commande{
+				width: 200px;
+				
+			}
+		}
+		@media screen and (min-width: 401px){
+			body #Formulaire_commande{
+				width: 300px;
+				margin: 0px 10px 10px 0px;
+			}
+		}
+		body #Formulaire_commande h3{
+			text-align: center;
+		}
+		body #Formulaire_commande label,
+		body #Formulaire_commande h3{
+			color: white;
+			font-weight: bold;
+		}
+		body #Formulaire_commande input[type=text],
+		body #Formulaire_commande input[type=number]{
+			max-width: 160px;
+			border-radius: 10px;
+			padding: 0px 0px 0px 10px;
+			height: 25px;
+			color: white;
+			font-weight: bold;
+			background: gray;
+			border-style: none none solid none;
+			border-color: white;
+			border-width: 4px;
+		}
+		body #Formulaire_commande input[type=text]:focus,
+		body #Formulaire_commande input[type=number]:focus{
+			border-style: none none solid none;
+			color: black;
+			border-color: gray;
+			background: white;
+		}
+		body #Formulaire_commande #BoxBtnValide input[type=submit]{
+			border: none;
+			outline: none;
+		}
+		body #Formulaire_commande div{
+			display: grid;
+			justify-content: center;
+			align-items: center;
+		}
+		body #Formulaire_commande div input{
+			height: 30px;
+			min-width: 100px;
+			text-align: center;
+			border-radius: 10px; 
+			margin: 0px 0px 0px 10px;
+			outline: none;
+			border: none;
+		}
+		body #Formulaire_commande #BoxBtnValide{
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		body #Formulaire_commande #BoxBtnValide input[type=submit]{
+			width: 100px;
+			height: 100%;
+			font-size: large;
+			border-radius: 10px;
+		}
+		body #Formulaire_commande #BoxBtnValide input[type=submit]:hover{
+			background: lightgreen;
+			transition: 1.5s;
+		}
+		body #BoxSucces{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		body #MsgSucces{
+			height: 250px;
+			max-width: 220px;
+			display: none;
+			text-align: center;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			border-radius: 10px;
+			padding: 0px 10px 0px 10px;
+			background: lightblue;
+			color: rgb(0,168, 243);
+		}
+		body #Formulaire_commande div .Erreur{
+			max-width: 186px;
+			max-height: 50px;
+			margin: 5px 0px 0px 0px;
+			border: 2px solid pink;
+			background: pink;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: #f9407b;
+		}

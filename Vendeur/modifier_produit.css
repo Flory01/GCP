@@ -1,0 +1,115 @@
+*{
+			margin: 0px;
+			padding:0px;
+			box-sizing: border-box;
+			font-size: large;
+			font-family: "bell mt";
+			color: black;
+		}
+		body{
+			background-size: cover;
+			height: 100%;
+			padding: 50px 0px 0px 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			overflow-x: hidden;
+		}
+		@media screen and (max-width: 430px){
+			*{
+				font-size: small;
+			}
+		}
+		body #BoxForm{
+			width: 100%;
+			display: flex;
+			padding	:10px 0px 0px 0px;
+			justify-content: center;
+			align-items: center;
+		}
+		body #Formulaire_InsertProd{
+			border: 2px solid #34495E;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			padding: 7px;
+			height: 320px;
+			width: 250px;
+			background: #34495E;
+			border-radius: 10px;
+		}
+		body #Formulaire_InsertProd label{
+			font-weight: bold;
+			margin: 5px 0px 5px 0px;
+		}
+		body #Formulaire_InsertProd input{
+			border: none;
+			outline: none;
+		}
+		body #Formulaire_InsertProd div .Erreur{
+			max-width: 160px;
+			height: 50px;
+			margin: 5px 0px 0px 0px;
+			border: 2px solid pink;
+			background: pink;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: #f9407b;
+		}
+		body #Formulaire_InsertProd .LibProd {
+			display: grid;
+			justify-content: center;
+			align-content: center;
+		}
+		body #Formulaire_InsertProd .LibProd input[type=text],
+		body #Formulaire_InsertProd .LibProd input[type=number]{
+			max-width: 160px;
+			border-radius: 10px;
+			padding: 0px 0px 0px 10px;
+			height: 25px;
+			color: white;
+			font-weight: bold;
+			background: gray;
+			border-style: none none solid none;
+			border-color: white;
+			border-width: 4px;
+		}
+		body #Formulaire_InsertProd .LibProd input[type=text]:focus,
+		body #Formulaire_InsertProd .LibProd input[type=number]:focus{
+			border-style: none none solid none;
+			color: black;
+			border-color: gray;
+			background: white;
+		}
+		body #Formulaire_InsertProd #BoxBtnValide{
+			height: 50px;
+			margin: 10px 0px 0px 0px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		body #Formulaire_InsertProd #BoxBtnValide input[type=submit]{
+			width: 100px;
+			height: 100%;
+			font-size: large;
+			border-radius: 10px;
+		}
+		body #Formulaire_InsertProd #BoxBtnValide input[type=submit]:hover{
+			background: lightgreen;
+			transition: 1.5s;
+		}
+		body #MsgSucces{
+			height: 250px;
+			max-width: 220px;
+			display: none;
+			text-align: center;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			border-radius: 10px;
+			padding: 0px 10px 0px 10px;
+			background: lightblue;
+			color: rgb(0,168, 243);
+		}

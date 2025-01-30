@@ -1,0 +1,139 @@
+header{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background: #34495E;
+	box-shadow: 0px 5px 15px rgb(0, 0, 0);
+}
+header img{
+	border: none;
+	height: 50px;
+	width: 50px;
+	border-radius: 4px;
+}
+header ul{
+	display: flex;
+	justify-content: center;
+	margin: 0px 0px 0px 2px;
+	height: 100%;
+}
+header ul li{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+header ul li a{
+	font-size: xx-large;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	padding: 10px 2px 0px 0px;
+	margin: 0px 0px 0px 5px;
+	border-radius: 8px;
+	border: none;
+}
+header ul li a:hover,
+header ul li a#Active{
+	background: white;
+	color: #34495E;
+	transition: 1.5s;
+}
+header label,
+header input[type=checkbox]{
+	display: none;
+}
+header label{
+	position: relative;
+	left: 50%;
+	width: 50px;
+	cursor: pointer;
+}
+header label::before{
+	position: relative;
+	width: 50px;
+	border-radius: 5px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #34495E;
+	background: white;
+	content: "Menu";
+}
+header input[type=checkbox]:checked ~ label::before{
+	content: "Fermer";
+}
+@media all and (min-width: 280px) and (max-width: 430px) {
+	header label{
+		float: left;
+	}
+}
+@media screen and (max-width: 430px){
+	header label{
+		display: block;
+	}
+	header input[type=checkbox]:checked ~ ul{
+		transition: 1.5s;
+		display: block;
+		height: 600px;
+		position: relative;
+		top: 328px;
+		left: 0px;
+		background: #34495E;
+	}
+	header input[type=checkbox]:checked ~ ul li{
+		display: block;
+	}
+}
+@media screen and (min-width: 431px){
+	header ul{
+		width: 78%;
+	}
+}
+@media screen and (min-width: 1030px){
+	header ul li{
+		width: 120px;
+		height: 100%;
+	}
+}
+@media all and (min-width: 808px) and (max-width: 1029px){
+	header ul li{
+		width: 90px;
+		height: 100%;
+	}
+}
+@media all and (min-width: 300px) and (max-width: 807px){
+	header ul li{
+		width: 100px;
+		height: 50px;
+	}
+}
+@media all and (min-width: 1px) and (max-width: 430px){
+	header img{
+		height: 45px;
+		margin: 0px 0px 0px 10px;
+		width: 40px;
+	}
+	header ul{
+		width: 50%;
+		transition: 1s;
+	}
+	header ul li{
+		display: none;
+		width: 100%;
+		height: 50px;
+	}
+	header ul li a{
+		margin: 0px;
+		border-radius: none;
+	}
+}

@@ -1,0 +1,40 @@
+*{
+			margin: 0px;
+			padding:0px;
+			box-sizing: border-box;
+			font-size: large;
+			font-family: "bell mt";
+			color: black;
+		}
+		body{
+			background-size: cover;
+			height: 100%;
+			padding: 35px 0px 0px 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			overflow-x: hidden;
+		}
+		body #BoxMsg{
+			display: flex;
+			justify-content: center;
+			margin: 70px 0px 40px 0px;
+		}
+		@media screen and (max-width: 430px){
+			*{
+				font-size: small;
+			}
+		}
+		body #MsgSucces{
+			height: 250px;
+			max-width: 220px;
+			display: none;
+			text-align: center;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			border-radius: 10px;
+			padding: 0px 10px 0px 10px;
+			background: lightblue;
+			color: rgb(0,168, 243);
+		}
