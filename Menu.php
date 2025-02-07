@@ -5,7 +5,11 @@
 			if (!empty($id_agent)) {
 			?>
 			<!--Logo de l'application-->
+
+			<a href="./">
 			<img src="../Images/Logo.jpg">
+			</a>
+			
 			<!--Bouton permettant de faire appaître ou dispaître les boutons de navigations-->	
 			<input type="checkbox" name="BtnMenu" id="BtnMenu">
 			<!--Label du bouton permettant de faire appaître ou dispaître les boutons de navigations-->
@@ -44,7 +48,10 @@
 			elseif (!empty($id_admin)) {
 			?>
 				<!--Logo de l'application-->
+				<a href="./">
 				<img src="../Images/Logo.jpg">
+				</a>
+			
 				<!--Bouton permettant de faire appaître ou dispaître les boutons de navigations-->	
 				<input type="checkbox" name="BtnMenu" id="BtnMenu">
 				<!--Label du bouton permettant de faire appaître ou dispaître les boutons de navigations-->
@@ -77,6 +84,11 @@
 						
 				</label>
 				<ul>
+					<li >
+						<a href='clients' class='fas fa-user' title='espace client'>
+								
+						</a>
+					</li>
 					<li >
 						<a href='Vendeur' class='fas fa-store' title='espace vendeur'>
 								
